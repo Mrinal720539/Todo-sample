@@ -1,0 +1,287 @@
+
+span{
+
+  font-weight: lighter;
+
+}
+body{
+  position: relative;
+  top: -100px;
+}
+
+.sign{
+
+  margin-left: -30px;
+  margin-top: 40px;
+}
+
+h1{
+  
+  font-weight: bolder;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+h2{
+
+  margin-left: 350px;
+  margin-top: 50px;
+  font-weight: lighter;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h3{
+ 
+  position: relative;
+  font-weight:normal;
+  font-size: 25px;
+  right:50px;
+  
+
+}
+.add{
+
+  position: relative;
+  top: 30px;
+  left: -40px;
+}
+.icon{
+  
+  color: red;
+  position: relative;
+  left: 270px;
+  top: -50px;
+  font-size: 30px;
+}
+
+
+
+.div2{
+  display: flex;
+  margin-left: 300px;
+  margin-top: -50px;
+}
+.div1{
+
+  display: flex;
+  margin-top: 100px;
+  margin-left: 300px;
+  margin-bottom: 30px;
+  
+}
+.par1{
+
+ width: 100px;
+ height: 200px;
+ position: relative;
+background-color:white;
+color: red;
+border: 1px solid red;
+border-radius: 10px;
+padding-top: 10px;
+padding-bottom: 120px;
+padding-left: 80px;
+padding-right: 80px;
+box-shadow: 5px 5px 5px plum;
+
+
+}
+.par2{
+
+  width: 100px;
+  height: 200px;
+  background-color:white;
+  position: relative;
+  color: red;
+border: 1px solid red;
+border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 10px;
+padding-bottom: 120px;
+padding-left: 80px;
+padding-right: 80px;
+box-shadow: 5px 5px 5px plum;
+
+}
+ .par3{
+  
+  width: 100px;
+  height: 200px;
+  background-color:white;
+  position: relative;
+  color: red;
+border: 1px solid red;
+border-radius: 10px;
+  padding-top: 10px;
+padding-bottom: 120px;
+padding-left: 80px;
+padding-right: 80px;
+box-shadow: 5px 5px 5px plum;
+
+ } 
+
+ .paragraph{
+ 
+  position: absolute;
+  text-decoration-line: line-through ;
+  text-decoration-style: solid red;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 25px;
+  left: 43px;
+  margin-top: -20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .paragraph2{
+
+  position: absolute;
+  color: black;
+  left: 20px;
+  margin-top: -20px;
+  display: inline-block;
+   font-size: 20px;
+   font-weight: normal;
+ }
+
+hr{
+   font-size: -5px;
+  position: relative;
+  top: -60px;
+  width: 200px;
+  margin-left: -20px;
+  border-bottom: solid grey; 
+}
+.my{
+
+  position: relative;
+  font-size: 20px;
+  color: black;
+  margin-left: 20px;
+
+}
+.trip{
+
+  bottom: 30px;
+}
+.list{
+
+  top: 0px;
+  
+}
+
+.todo{
+
+  top: 0px;
+}
+.grey1{
+
+  top: -30px;
+  bottom: -100px;
+}
+.grey{
+  top: -50px;
+}
+
+.complete{
+
+  margin-top: 25px;
+}
+.complete1{
+  margin-top: 25px;
+}
+
+
+
+
+
+
+@media(min-width: 767px) and (max-width: 1025px)
+{
+
+ 
+.div2{
+ 
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 260px;
+  
+}
+.par1{
+
+  top: 50px;
+  width: 1300px;
+  left: -250px;
+}
+.par2{
+
+  top: 80px;
+  bottom: 80px;
+  left: -500x;
+  right: 300px;
+  width: 1300px;
+}
+.par3{
+
+  top: 110px;
+  width:1300px;
+  left: -250px;
+}
+
+.trip{
+
+  position: relative;
+  left: -50px;
+  font-size: 80px;
+}
+
+h1{
+
+  margin-left: -280px;
+  margin-top: 80px;
+  font-size: 180px;
+}
+
+.icon{
+
+  margin-left: 280px;
+  font-size: 100px;
+  margin-top: 220px;
+
+}
+
+.todo{
+
+  font-size: 80px;
+}
+
+.list{
+  font-size: 80px;
+}
+.paragraph{
+
+  visibility: hidden;
+}
+
+.paragraph2{
+
+  visibility: hidden;
+}
+
+  
+  .add{
+    visibility: hidden;
+  }
+ 
+ hr{
+
+  visibility: hidden;
+ }
+
+ 
+}
+
+

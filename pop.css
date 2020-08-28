@@ -1,0 +1,286 @@
+.Paris{
+
+    font-size: 100px;
+    font-weight: 10px;
+    position: relative;
+    left: 400px;
+    font-style: initial
+    
+    
+    
+    }
+    .line1{
+    
+        color: lightgray;
+        position: relative;
+        width: 180px;
+        left: -400px;
+        right: 200px;
+        top: -70px;
+        
+    }
+    
+    .line2{
+    
+        color: lightgray;
+        position: relative;
+        left: 360px;
+        width: 180px;
+        top: -80px;
+    }
+    
+    .back{
+    
+        position: relative;
+        left: 550px;
+        font-size: 50px;
+        top: 30px;
+        color: red;
+    
+    }
+    .box1{
+    
+        width: 400px;
+        height: 350px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px lightblue;
+        border: 2px solid red;
+        margin: auto;
+        top: 60px;
+        left: -30px;
+    }
+    
+    .div1{
+    
+        position: relative;
+        left: 100px;
+        top:10px;
+        bottom: 10px;
+        font-size: 30px;
+        color: crimson;
+    }
+    
+    hr{
+    
+        width: 300px;
+        position: relative;
+        left: 50px;
+        top: -10px;
+        color: lightgray;
+        font-weight: bolder;
+    }
+    
+    .task{
+    
+       color: crimson;
+       position: relative;
+       left: 100px;
+       font-size: 30px;
+    }
+    
+    .pending{
+     
+        position: relative;
+        left: 80px;
+        font-size: 30px;
+        font-weight: bolder;
+        color: black;
+    }
+      .sign{
+    
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 350px;
+        color: crimson;
+        font-size: 30px;
+      }
+    
+      .box1{
+    
+        position: relative;
+        left: -50px;
+        top: 0px;
+      }
+    
+      .back1{
+    
+        color: black;
+        position: relative;
+        left: 50px;
+        top: -55px;
+      }
+    
+    
+    
+    
+    
+      .popup{
+
+        position: fixed;
+       margin: auto;
+        width: 500px;
+        height: 200px;
+        border: 2px solid red;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px green;
+        left: 400px;
+        top: 40%;
+        z-index: 100;
+        text-align: center;  
+        background: white;
+        
+        
+    }
+    
+    .blur{
+    
+        position: fixed;
+        margin: auto;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: white (0, 0, 0, 0.4);
+        z-index: 11;
+        backdrop-filter: blur(10px);
+        
+    
+    }
+
+    .popup-text{
+   
+        position: relative;
+        color: crimson;
+        font-size: 30px;
+        text-align: center;
+        top: 20px;
+        bottom: 40px;
+      }
+      input[type=text]{
+    
+        position: relative;
+        width:280px;
+        height: 50px;
+        left: 10px;
+        top:40px;
+        border-radius: 4px;
+        border: 5px red;
+        box-shadow: 5px 5px 5px salmon;
+    
+      }
+      .popup-button{
+    
+    
+        position: relative;
+        top: 50px;
+        border-radius: 30%;
+        background-color:red;
+        color: white;
+        border: red;
+        width:60px;
+        height: 30px;
+      }
+
+
+      @media ( min-width: 360px) and ( max-width:641px ){
+
+        .Paris{
+
+     font-size: 80px;
+    position: relative;
+    top: 80px;
+    left: 10px;
+    bottom: 40px;
+    font-weight: lighter
+        }
+
+        .back{
+
+            position: relative;
+            top: 50px;
+            left: 200px;
+            
+
+        }
+
+        .figure{
+
+            height: 100%;
+            
+        }
+        .box1{
+
+            top: 60px;
+            height: 100%;
+            left:10px;
+            width: 580px;
+        }
+
+        .sign{
+
+            position: absolute;
+            margin-top: 120px;
+            margin-left:470px ;
+        }
+
+        .div1{
+
+            position: relative;
+            font-size:70px;
+            top:40px;
+            left: 0px;
+        }
+        .task{
+
+            position: relative;
+            left: 110px;
+            font-size: 50px;
+
+        }
+        .pending{
+
+            position: relative;
+            font-size: 50px;
+            left:100px;
+        }
+        .blur{
+    
+            position: fixed;
+            margin: auto;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background-color: white (0, 0, 0, 0.4);
+            z-index: 11;
+            backdrop-filter: blur(10px);
+            
+        
+        }
+
+        .popup-button{
+    
+    
+            position: relative;
+            top: 50px;
+            border-radius: 20%;
+            background-color:red;
+            color: white;
+            border: red;
+            width:80px;
+            height: 40px;
+            font-size: 30px;
+            
+          }
+          .popup{
+
+            left:20px;
+            width: 590px;
+          }
+
+      }

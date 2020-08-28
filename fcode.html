@@ -1,0 +1,247 @@
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mrinal</title>  
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="black-ball.gif">
+</head>
+
+
+
+<body>
+        <h1>Backtracking</h1>    
+
+<p> Copyright &#169;2002 by David</p>
+<p>The usual scenario is that you are <i>faced with a number of options</i> aand you must choose one<br>
+       After you make a <i>choice</i> youe will get a set of option just what options you get depends on what choices<br>
+       you made.
+</p>
+
+<p>You can <i>backtrack</i> to continue to search for a good leaf<br> and try out the next option in that
+set of options</p>
+<br>
+
+<div class="world">
+    <pre>
+        int main() {
+            printf("Hello World");
+        }
+    </pre>
+</div>
+<center><img src="download.png" alt="Ball" style="background-color: darkorange; border-radius: 50%; border-style: dashed;" ></center>
+
+<ul class="list">
+    <li>Starting at Root ,your options are A and B</li>
+    <li>C is bad, go back yo A</li>
+    <li>Starting at Root ,your options are A and B</li>
+    <li>D is bad, go back to A</li>
+    <li>At Root  you have already tried A</li>
+</ul>
+<br>
+<br>
+
+<p>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. There is also a data structure called a tree, <br>
+    but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching.)
+</p>
+
+<h3>The Backtracking Alorithm.</h3>
+<p>Here is the algorithm (in pseudocode) for doing backtracking from a given node n:
+</p>
+
+<h3><pre>
+    boolean solve(Node n) {
+        if n is a leaf node {
+            if the leaf is a goal node, return true
+            else return false
+        } else {
+            for each child c of n {
+                if solve(c) succeeds, return true
+            }
+            return false
+        }
+</pre>
+</h3>
+
+<p>How does this work?</p>
+<ul>
+    <li>If any child of n is solvable </li>
+    <li>If no child is solvable </li>
+</ul>
+<br>
+<br>
+
+<h3>Keep Backtracking Simple</h3>
+<p>To keep the program clean, therefore, tests like this should be buried in methods. In a <font size="+2">Chess</font> game, for example, you could test whether a node is a leaf by writing a gameOver method (or you could even call it <b>isLeaf</b>).<br>
+     This method would encapsulate all the ugly details of figuring out whether any possible moves remain.
+</p>
+
+<p>The most straightforward way to keep track of which children of the node have been tried is as follows: Upon initial entry to the node (that is, when you first get there from above), make a list of all its children. As you try each child, take it off the list. When the list is empty, <br>
+    there are no remaining untried children, and you can return <b>"failure."</b> <br> This is a simple approach, but it may require quite a lot of additional work.</p>
+</p>
+
+<h4>And finally, here's the recursive backtracking routine to "solve" the binary tree by finding a goal node.</h4>
+
+<p>
+<pre>
+       static boolean solvable(BinaryTree Mode){
+       /*1*/ if (node == null) return false;
+       /*2*/ if (node == null) return false;
+       /*3*/ if (solvable(node.leftChild)) return true;
+       }
+</pre>   
+</p>
+<p>
+    <pre>
+    <font size="+1">boolean mapISOK()></font>
+           Used by method one to check whether the entire map is colored correctly.
+    </pre>
+</p>
+
+
+<p>
+    <pre>
+    <font size="+1">boolean okToColor(int row, int column, int color)</font>
+           Used by method 2 to check, at every node, whether there is an adjacent node already colored with the given color.
+    </pre>
+</p>
+<p>Those appear pretty similar, and you might think they are equally good. However, the timing information suggests otherwise:</p>
+
+
+    <center><table class="taab1">
+
+    <center>
+    <tbody>
+    <tr>
+        <td>
+                              
+        </td>
+        <td>
+            2 by 3 map
+        </td>
+        <td>
+            3 by 3 map
+        </td>
+        <td>
+            3 by 4 map
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Method 1:
+        </td>
+         <td>
+             60ms
+         </td>
+         <td>
+             940mx
+         </td>
+         <td>
+             1733ms
+         </td>    
+    </tr>
+    </tbody>
+</table>
+
+</center>
+
+<p>The zeros in the above table indicate times too short to measure (less than 1 millisecond). Why this huge difference? Either of these methods could have exponential growth.<br> Eliminating a node automatically eliminates all of its descendents, and this will often prevent exponential growth. Conversely, by waiting to check until a leaf node is reached, exponential growth is practically guaranteed.<br> <i>If there is any way to eliminate children (reduce the set of choices), do so!</i>
+    </p>
+
+<p>
+    we modify solvable as:
+</p>
+
+<p>
+    <font size="+2">
+        <pre>
+        static boolean solvable(BinaryTree node) {
+            enter(node);
+            <b>if (node == null) return no(node);</b>
+            if (node.isGoalNode) return yes(node);
+            if (solvable(node.leftChild)) return yes(node);
+            if (solvable(node.rightChild)) return yes(node);
+            return no(node);
+        }
+        </pre>
+    </font>
+</p>
+
+<p>
+    And we get these result:
+</p>
+
+<p>
+    <pre>
+       <font size="+2">
+       <b>    Entering solvable(Root)
+           |  Entering solvable(A)
+           |  |  Entering solvable(C)
+           |  |  |  Entering solvable(null)
+           |  |  |  solvable(null) returns false
+           |  |  |  Entering solvable(null)
+           |  |  |  solvable(null) returns false
+           |  |  solvable(C) returns false
+           |  |  Entering solvable(D)
+           |  |  |  Entering solvable(null)
+           |  |  |  solvable(null) returns false
+           |  |  |  Entering solvable(null)
+           |  |  |  solvable(null) returns false
+           |  |  solvable(D) returns false
+           |  solvable(A) returns false
+           |  Entering solvable(B)
+           |  |  Entering solvable(E)
+       </b>
+       </font>
+    </pre>
+     </p>
+
+     <p>
+        <b>Trick #4: Create an Exception</b>. If an <strong> Exception</strong> is thrown, you can get information about just where it happened by sending it the message printStackTrace(PrintStream).<br>
+         Since an <font size="+1"><b>Exception is an object</b></font>like any other, you can create and throw your own Exceptions.
+     </p>
+
+     <h3>
+         Example:"Cindy's Puzzle"
+     </h3>
+
+     <p>
+        I call the following puzzle "Cindy's puzzle" for historical reasons. <br>You have some number n of black marbles and the same number of white marbles, and you have a playing board which consists simply of a line of 2n+1 spaces to put the marbles in. Start with the black marbles all at one end (say, the left), the white marbles all at the other end, and a free space in between.
+     </p>
+    <br>
+    <div>
+    <center>
+        <table  style="background-color: coral; border-radius: 20px;">  
+        <tbody>
+            <tr>
+                <td>
+                 <img src="black-ball.gif" height="80px" width="80px">
+                 </td>
+                 <td>
+                    <img src="black-ball.gif" height="80px" width="80px">
+                 </td>
+                 <td>
+                    <img src="black-ball.gif" height="80px" width="80px">
+                 </td>
+                 <td>
+                    <img src="black-ball.gif" height="80px" width="80px">
+                 </td>
+            </tr>
+            </tbody>
+        </table>   
+    </center>
+</div>
+<div class="ball-gif">
+    <p class="paragraph">
+        For example, you could make the following sequence of moves:
+    </p>
+<span class="span">
+      Starting position: <img src="white-ball.gif">
+       Black moves ahead: <img src="black-ball.gif">
+        white jumps: <img src="black-ball.gif">
+        Black jumps: <img src="white-ball.gif">
+</span>
+ </div>
+ <iframe src="https://www.prepbytes.com/" scrolling="auto" width="50%" height="300px" ></iframe>
+</iframe>
+
+</body>

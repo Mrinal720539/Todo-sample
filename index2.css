@@ -1,0 +1,231 @@
+.Paris{
+
+font-size: 70px;
+font-weight: 10px;
+position: relative;
+left: 400px;
+
+
+
+}
+.line1{
+
+    color: lightgray;
+    position: relative;
+    width: 180px;
+    left: -400px;
+    right: 200px;
+    top: -100px;
+    
+}
+
+.line2{
+
+    color: lightgray;
+    position: relative;
+    left: 360px;
+    width: 180px;
+    top: -110px;
+}
+
+.back{
+
+    position: relative;
+    left: 550px;
+    font-size: 50px;
+    top: 30px;
+    color: red;
+
+}
+.box1{
+
+    width: 400px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightblue;
+    border: 2px solid red;
+    margin: auto;
+    top: 60px;
+    left: -30px;
+}
+
+.div1{
+
+    position: relative;
+    left: 100px;
+    top:10px;
+    bottom: 10px;
+    font-size: 30px;
+    color: crimson;
+}
+
+hr{
+
+    width: 300px;
+    position: relative;
+    left: 50px;
+    top: -10px;
+    color: lightgray;
+    font-weight: bolder;
+}
+
+.task{
+
+   color: crimson;
+   position: relative;
+   left: 100px;
+   font-size: 30px;
+}
+
+.pending{
+ 
+    position: relative;
+    left: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
+  .sign{
+
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 350px;
+    color: crimson;
+    font-size: 30px;
+  }
+
+  .box1{
+
+    position: relative;
+    left: -50px;
+    top: 0px;
+  }
+
+  .back1{
+
+    color: black;
+    position: relative;
+    left: 50px;
+    top: -55px;
+  }
+
+
+
+  @media (min-width: 374px) and (max-width: 813px){
+
+    .Paris{
+        position: relative;
+        font-size: 60px;
+        left: 120px;
+
+    }
+    .back{
+        
+        position: relative;
+        left:220px;
+        font-size: 50px;
+        
+    }
+
+    .line1{
+
+        position: relative;
+        width: 40px;
+        left: -100px;
+        font-weight: bolder;
+        color: gray;
+
+    }
+    .line2{
+
+        position: relative;
+        width: 40px;
+        
+        font-weight: bolder;
+        color: gray;
+    }
+    .box1{
+        
+        top: 30px;
+        position: relative;
+        left: 80px;
+    }
+
+    .figure{
+
+        height: 100%;
+        width: 100%;
+    }
+  }
+    @media ( min-width:359px) and (max-width:641px){
+
+        .Paris{
+
+            position: relative;
+            left: 100px;
+            font-size: 60px;
+            top: 100px;
+
+        }
+        .back1{
+
+            visibility: hidden;
+
+        }
+        .back{
+
+            position: relative;
+            left:50px;
+            top: 10px;
+        }
+
+        .box1{
+
+            top: 70px;
+            position: relative;
+            left: 30px;
+            height: 700px;
+            width: 500px;
+
+        }
+        .line{
+            visibility: hidden;
+        }
+        .line2{
+            visibility: hidden;
+        }
+        .sign{
+
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 400px;
+            font-size: 50px;
+        }
+
+        .div1{
+
+            font-size: 50px;
+            position: relative;
+            left: 50px;
+
+        }
+        hr{
+
+            font-weight: bolder;
+            width: 350px;
+            bottom: 40px;
+        }
+        .task{
+
+            font-size: 50px;
+        }
+        .pending{
+              
+            top: 20px;
+            font-size: 50px;
+        }
+        }
+
+    
+  

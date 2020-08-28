@@ -1,0 +1,272 @@
+
+
+
+.popup{
+
+    position: fixed;
+   margin: auto;
+    width: 400px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px green;
+    left: 550px;
+    top: 40%;
+    z-index: 100;
+    text-align: center;  
+    background: white;
+    
+    
+}
+
+.blur{
+
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: white (0, 0, 0, 0.4);
+    z-index: 11;
+    backdrop-filter: blur(8px);
+    
+
+}
+
+  
+span{
+
+    font-weight: lighter;
+  
+  }
+  body{
+    position: relative;
+    top: -100px;
+  }
+ 
+  
+  .sign{
+  
+    margin-left: -30px;
+    margin-top: 40px;
+  }
+  
+  h1{
+    
+    font-weight: bolder;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+  
+  h2{
+  
+    margin-left: 350px;
+    margin-top: 50px;
+    font-weight: lighter;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  h3{
+   
+    position: relative;
+    font-weight:normal;
+    font-size: 25px;
+    right:50px;
+    
+  
+  }
+  .add{
+  
+    position: relative;
+    top: 30px;
+    left: -40px;
+  }
+  .icon{
+    
+    color: red;
+    position: relative;
+    left: 270px;
+    top: -50px;
+    font-size: 30px;
+  }
+  
+  
+  
+  .div2{
+    display: flex;
+    margin-left: 300px;
+    margin-top: -50px;
+  }
+  .div1{
+  
+    display: flex;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    
+  }
+  .par1{
+  
+   width: 100px;
+   height: 200px;
+   position: relative;
+  background-color:white;
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-shadow: 5px 5px 5px plum;
+  
+  
+  }
+  .par2{
+  
+    width: 100px;
+    height: 200px;
+    background-color:white;
+    position: relative;
+    color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+  padding-bottom: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-shadow: 5px 5px 5px plum;
+  
+  }
+   .par3{
+    
+    width: 100px;
+    height: 200px;
+    background-color:white;
+    position: relative;
+    color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+    padding-top: 10px;
+  padding-bottom: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-shadow: 5px 5px 5px plum;
+  
+   } 
+  
+   .paragraph{
+   
+    position: absolute;
+    text-decoration-line: line-through ;
+    text-decoration-style: solid red;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 25px;
+    left: 43px;
+    margin-top: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+  
+   .paragraph2{
+  
+    position: absolute;
+    color: black;
+    left: 20px;
+    margin-top: -20px;
+    display: inline-block;
+     font-size: 20px;
+     font-weight: normal;
+   }
+  
+  hr{
+     font-size: -5px;
+    position: relative;
+    top: -60px;
+    width: 200px;
+    margin-left: -20px;
+    border-bottom: solid grey; 
+  }
+  .my{
+  
+    position: relative;
+    font-size: 20px;
+    color: black;
+    margin-left: 20px;
+  
+  }
+  .trip{
+  
+    bottom: 30px;
+  }
+  .list{
+  
+    top: 0px;
+    
+  }
+  
+  .todo{
+  
+    top: 0px;
+  }
+  .grey1{
+  
+    top: -30px;
+    bottom: -100px;
+  }
+  .grey{
+    top: -50px;
+  }
+  
+  .complete{
+  
+    margin-top: 25px;
+  }
+  .complete1{
+    margin-top: 25px;
+  }
+  
+  
+  
+  .popup-text{
+   
+    position: relative;
+    color: crimson;
+    font-size: 30px;
+    text-align: center;
+    top: 20px;
+    bottom: 40px;
+  }
+  input[type=text]{
+
+    position: relative;
+    width:280px;
+    height: 50px;
+    left: 10px;
+    top:40px;
+    border-radius: 4px;
+    border: 5px  salmon;
+    box-shadow: 5px 5px 5px salmon;
+
+  }
+  .popup-button{
+
+
+    position: relative;
+    top: 50px;
+    border-radius: 20%;
+    background-color:red;
+    color: white;
+    border: red;
+        width:60px;
+        height: 30px;
+  }
+  
+ 
