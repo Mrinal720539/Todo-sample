@@ -1,11 +1,11 @@
 .Paris{
 
     font-size: 100px;
-    font-weight: 10px;
+    font-weight: -10px;
     position: relative;
-    left: 400px;
-    font-style: initial
-    
+    left: 300px;
+    font-style: initial;
+    letter-spacing: initial;
     
     
     }
@@ -14,19 +14,19 @@
         color: lightgray;
         position: relative;
         width: 180px;
-        left: -400px;
+        left: -430px;
         right: 200px;
-        top: -70px;
-        
+        top: -150px;
+    
     }
     
     .line2{
     
         color: lightgray;
         position: relative;
-        left: 360px;
+        left: 390px;
         width: 180px;
-        top: -80px;
+        top: -160px;
     }
     
     .back{
@@ -34,21 +34,21 @@
         position: relative;
         left: 550px;
         font-size: 50px;
-        top: 30px;
+        top: -30px;
         color: red;
     
     }
     .box1{
     
-        width: 400px;
-        height: 350px;
+        width: 450px;
+        height: 300px;
         position: relative;
         border-radius: 10px;
         box-shadow: 5px 5px 5px lightblue;
         border: 2px solid red;
         margin: auto;
-        top: 60px;
-        left: -30px;
+        top: -30px;
+        left: 100px;
     }
     
     .div1{
@@ -123,8 +123,8 @@
         height: 200px;
         border: 2px solid red;
         border-radius: 10px;
-        box-shadow: 4px 4px 4px green;
-        left: 400px;
+        box-shadow: 4px 4px 4px lightblue;
+        left: 380px;
         top: 40%;
         z-index: 100;
         text-align: center;  
